@@ -2,7 +2,7 @@
     font-family: "poppins";
   }
   body{
-    background-color: rgb(1, 102, 68);
+    background-color: rgb(4, 29, 39);
   }
   
   .container{
@@ -10,7 +10,7 @@
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    background-color:azure;
+    background-color:rgb(231,233,235);
     width: fit-content;
     height: 80%;
     margin-top: 50px;
@@ -34,16 +34,21 @@
   }
   
    button{
-    background-color:burlywood;
+    background-color:rgb(231, 179, 112);
     font-family: "poppins";
     font-size: 15px;
     font-weight: 600;
     width: 215px;
-    border: 1px dotted rgb(159, 91, 1);
+    border:none;
     border-radius: 5px;
     margin-top: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
+   }
+
+   button:hover {
+    background-color: rgb(174, 126, 63);
+    cursor: pointer;
    }
   
   
