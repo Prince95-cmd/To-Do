@@ -11,9 +11,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     { nameOfTask: "Code", taskDescription: "Code for at least five hours" }
   ];
 
+  const messageElement = document.getElementById("message");
   const addTodo = () => {
     if (taskName.value === "" || taskDescription.value === "") {
-      alert("Please fill this form!");
+      messageElement.textContent = "Aww! Aww!! Please fill in both fields";
       return;
     }
 
@@ -67,10 +68,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
       inputContainer.style.width = "350px";
   
       // Set width and height for input fields
-      taskNameInput.style.width = "80px";
+      taskNameInput.style.width = "200px";
       taskNameInput.style.height = "50px";
-      taskDescInput.style.width = "80px";
+      taskDescInput.style.width = "200px";
       taskDescInput.style.height = "50px";
+      taskNameInput.style.marginTop="10px"
   
       // Set margin or padding to reduce the gap between input fields and buttons
       deleteBtn.style.marginRight = "5px";
